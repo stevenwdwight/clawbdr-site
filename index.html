@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ClawBDR.ai — Your AI Business Development Representative</title>
-<meta name="description" content="AI-powered BDR that handles prospecting, outreach, and CRM so your sales reps can focus on closing deals.">
+<meta name="description" content="ClawBDR gives your sales team an AI-powered BDR that prospects, qualifies, and fills your pipeline — for a fraction of the cost of hiring.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,13 +23,14 @@ tailwind.config = {
 </script>
 <style>
   body { font-family: 'Inter', system-ui, sans-serif; background: #050a12; color: #e2e8f0; }
-  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
-  .glow { box-shadow: 0 0 60px rgba(16, 185, 129, 0.15); }
+  .glow { box-shadow: 0 0 60px rgba(16, 185, 129, 0.2); }
   .gradient-text { background: linear-gradient(135deg, #34d399, #10b981, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
   .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
   .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(16, 185, 129, 0.1); }
-  .hero-gradient { background: radial-gradient(ellipse at 50% 0%, rgba(16,185,129,0.08) 0%, transparent 70%); }
+  .hero-gradient { background: radial-gradient(ellipse at 50% 0%, rgba(16,185,129,0.1) 0%, transparent 65%); }
+  table { border-collapse: collapse; }
 </style>
 </head>
 <body class="antialiased">
@@ -38,108 +39,233 @@ tailwind.config = {
 <nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-xl border-b border-white/5">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <div class="text-xl font-bold">Claw<span class="gradient-text">BDR</span>.ai</div>
-    <a href="#contact" class="hidden sm:inline-block bg-brand-500 hover:bg-brand-600 text-dark-900 font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm">Book a Discovery Call</a>
   </div>
 </nav>
 
 <!-- Hero -->
-<section class="hero-gradient min-h-screen flex items-center pt-20">
-  <div class="max-w-6xl mx-auto px-6 py-24 text-center">
-    <h1 class="text-4xl sm:text-5xl md:text-7xl font-900 tracking-tight leading-tight mb-6">
-      Your BDR Agent.<br><span class="gradient-text">Always Prospecting. Never Stops.</span>
+<section class="hero-gradient min-h-screen flex items-center pt-16">
+  <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+    <div class="inline-block bg-brand-500/10 text-brand-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-8 border border-brand-500/20">
+      AI-Powered Sales Prospecting
+    </div>
+    <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-tight mb-6">
+      Your Sales Team Should Be<br><span class="gradient-text">Closing Deals. Not Chasing Them.</span>
     </h1>
-    <p class="text-lg sm:text-xl text-dark-200 max-w-2xl mx-auto mb-10 leading-relaxed">
-      AI-powered Business Development Representative that supports your sales team — so your reps can focus on building relationships and closing deals.
+    <p class="text-xl sm:text-2xl text-dark-200 max-w-3xl mx-auto mb-4 leading-relaxed">
+      Most companies can't afford a full-time Business Development Representative.
     </p>
-    <a href="#contact" class="inline-block bg-brand-500 hover:bg-brand-400 text-dark-900 font-bold px-8 py-4 rounded-xl text-lg transition-colors glow">
+    <p class="text-xl sm:text-2xl text-white font-semibold max-w-3xl mx-auto mb-10">
+      Now they don't have to.
+    </p>
+    <a href="#contact" class="inline-block bg-brand-500 hover:bg-brand-400 text-dark-900 font-bold px-10 py-4 rounded-xl text-lg transition-colors glow">
       Book a Discovery Call →
     </a>
   </div>
 </section>
 
-<!-- The Problem -->
-<section class="py-24 fade-in">
+<!-- What is a BDR -->
+<section class="py-16 fade-in">
   <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-3xl sm:text-4xl font-800 mb-12 text-center">The Problem</h2>
-    <div class="space-y-6 text-lg text-dark-200 leading-relaxed">
-      <p><strong class="text-white">Your reps are relationship builders and closers</strong> — that's what you hired them for.</p>
-      <p>But they spend most of their day on research, data entry, outreach prep, and CRM updates.</p>
-      <p class="text-brand-400 font-semibold">Follow-ups slip. Accounts go cold. Pipeline gaps appear too late to fix.</p>
-      <p>They should be in <strong class="text-white">conversations</strong>, not spreadsheets.</p>
+    <h2 class="text-3xl sm:text-4xl font-black mb-6 text-center">What Is a BDR — and Why Does Your Business Need One?</h2>
+    <p class="text-lg text-dark-200 leading-relaxed mb-6 text-center max-w-3xl mx-auto">
+      A <strong class="text-white">Business Development Representative (BDR)</strong> is the sales professional whose only job is finding and qualifying new business — so your closers can focus on closing.
+    </p>
+    <div class="grid sm:grid-cols-2 gap-4 mb-8">
+      <div class="bg-dark-600/40 border border-white/5 rounded-xl p-5 card-hover">
+        <div class="text-2xl mb-2">🚀</div>
+        <h3 class="font-bold text-white mb-1">Increase Sales Velocity</h3>
+        <p class="text-dark-200 text-sm">BDRs keep your pipeline full, accelerating the entire sales cycle.</p>
+      </div>
+      <div class="bg-dark-600/40 border border-white/5 rounded-xl p-5 card-hover">
+        <div class="text-2xl mb-2">🎯</div>
+        <h3 class="font-bold text-white mb-1">Boost Productivity</h3>
+        <p class="text-dark-200 text-sm">They handle prospecting and qualifying so your AEs focus only on closing.</p>
+      </div>
+      <div class="bg-dark-600/40 border border-white/5 rounded-xl p-5 card-hover">
+        <div class="text-2xl mb-2">🔎</div>
+        <h3 class="font-bold text-white mb-1">Targeted Outreach</h3>
+        <p class="text-dark-200 text-sm">Research key players and new markets so your team talks only to qualified prospects.</p>
+      </div>
+      <div class="bg-dark-600/40 border border-white/5 rounded-xl p-5 card-hover">
+        <div class="text-2xl mb-2">✅</div>
+        <h3 class="font-bold text-white mb-1">Improved Lead Quality</h3>
+        <p class="text-dark-200 text-sm">Vet potential customers using proven methodologies, ensuring higher conversion rates.</p>
+      </div>
     </div>
+    <p class="text-center text-brand-400 font-semibold text-lg">In short — a BDR keeps your sales funnel full of high-quality prospects. Every single day.</p>
   </div>
 </section>
 
-<!-- The Solution -->
-<section class="py-24 bg-dark-800/50 fade-in">
+<!-- The Problem -->
+<section class="py-16 bg-dark-800/50 fade-in">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl sm:text-4xl font-800 mb-8">The Solution</h2>
-    <p class="text-lg text-dark-200 leading-relaxed mb-4">ClawBDR gives every sales rep their own <strong class="text-white">AI Business Development Representative</strong>.</p>
-    <p class="text-lg text-dark-200 leading-relaxed mb-8">It handles the top-of-funnel grind so your reps walk into every conversation prepared and confident.</p>
-    <p class="text-sm text-dark-300 border border-white/10 inline-block px-4 py-2 rounded-full">Built on OpenClaw + NVIDIA NemoClaw enterprise security</p>
+    <h2 class="text-3xl sm:text-4xl font-black mb-6">So Why Don't More Companies Have One?</h2>
+    <p class="text-xl text-dark-200 leading-relaxed mb-4">Because hiring a great BDR is expensive. Really expensive.</p>
+    <p class="text-dark-300 leading-relaxed">They spend most of their day on research, data entry, outreach prep, and CRM updates — then follow-ups slip, accounts go cold, and pipeline gaps appear too late to fix.</p>
+  </div>
+</section>
+
+<!-- Cost Comparison Table -->
+<section class="py-16 fade-in">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl sm:text-4xl font-black mb-4 text-center">What a BDR Actually Costs You</h2>
+    <p class="text-dark-300 text-center mb-10">Based on 2025–2026 national compensation data</p>
+    <div class="overflow-x-auto rounded-2xl border border-white/10">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="bg-dark-600/80">
+            <th class="text-left px-6 py-4 font-bold text-white"></th>
+            <th class="text-center px-6 py-4 font-bold text-white">Human BDR</th>
+            <th class="text-center px-6 py-4 font-bold text-brand-400">ClawBDR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t border-white/5">
+            <td class="px-6 py-4 text-dark-200">Base Salary</td>
+            <td class="px-6 py-4 text-center text-white">$55,000 – $65,000</td>
+            <td class="px-6 py-4 text-center text-brand-400 font-bold">$0</td>
+          </tr>
+          <tr class="border-t border-white/5 bg-dark-600/20">
+            <td class="px-6 py-4 text-dark-200">Commission / OTE</td>
+            <td class="px-6 py-4 text-center text-white">$10,000 – $30,000+</td>
+            <td class="px-6 py-4 text-center text-brand-400 font-bold">$0</td>
+          </tr>
+          <tr class="border-t border-white/5">
+            <td class="px-6 py-4 text-dark-200">Benefits & Overhead</td>
+            <td class="px-6 py-4 text-center text-white">$15,000 – $20,000</td>
+            <td class="px-6 py-4 text-center text-brand-400 font-bold">$0</td>
+          </tr>
+          <tr class="border-t border-white/5 bg-dark-600/20">
+            <td class="px-6 py-4 text-dark-200">Ramp Time</td>
+            <td class="px-6 py-4 text-center text-white">3 – 6 months</td>
+            <td class="px-6 py-4 text-center text-brand-400 font-bold">24 hours</td>
+          </tr>
+          <tr class="border-t border-white/5">
+            <td class="px-6 py-4 text-dark-200">Turnover Risk</td>
+            <td class="px-6 py-4 text-center text-white">High</td>
+            <td class="px-6 py-4 text-center text-brand-400 font-bold">None</td>
+          </tr>
+          <tr class="border-t border-white/5 bg-dark-600/20">
+            <td class="px-6 py-4 text-dark-200">Works 24/7</td>
+            <td class="px-6 py-4 text-center text-white">No</td>
+            <td class="px-6 py-4 text-center text-brand-400 font-bold">Yes</td>
+          </tr>
+          <tr class="border-t border-white/5">
+            <td class="px-6 py-4 text-dark-200">PTO / Sick Days</td>
+            <td class="px-6 py-4 text-center text-white">Yes</td>
+            <td class="px-6 py-4 text-center text-brand-400 font-bold">Never</td>
+          </tr>
+          <tr class="border-t border-white/5 bg-brand-500/5">
+            <td class="px-6 py-5 font-black text-white text-base">Total Annual Cost</td>
+            <td class="px-6 py-5 text-center font-black text-white text-base">$80,000 – $95,000+</td>
+            <td class="px-6 py-5 text-center font-black text-brand-400 text-base">A fraction of that</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-center text-dark-200 mt-8 text-lg">ClawBDR does everything a human BDR does — for a fraction of the cost, with no ramp time, no turnover, and no days off.</p>
   </div>
 </section>
 
 <!-- Features -->
-<section class="py-24 fade-in">
+<section class="py-16 bg-dark-800/50 fade-in">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl sm:text-4xl font-800 mb-4 text-center">What Your BDR Agent Does</h2>
-    <p class="text-dark-300 text-center mb-16">Everything a great BDR does — at machine speed, with zero overhead.</p>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <h2 class="text-3xl sm:text-4xl font-black mb-3 text-center">What Your BDR Agent Does</h2>
+    <p class="text-dark-300 text-center mb-10">Everything a great BDR does — at machine speed, with zero overhead.</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-7 card-hover">
-        <div class="text-3xl mb-4">🔍</div>
-        <h3 class="text-xl font-bold mb-3">Deep Prospect Intel</h3>
-        <p class="text-dark-200 text-sm leading-relaxed">Company research AND contact-level intelligence before every call. Your rep walks in knowing the company's pain, the contact's background, recent news, and exactly what to talk about.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">📞</div>
+        <h3 class="text-lg font-bold mb-2">Cold Outreach</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Outbound cold calls, emails, and LinkedIn outreach to spark interest with qualified prospects.</p>
       </div>
 
-      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-7 card-hover">
-        <div class="text-3xl mb-4">📧</div>
-        <h3 class="text-xl font-bold mb-3">Multi-Channel Outreach & Sequencing</h3>
-        <p class="text-dark-200 text-sm leading-relaxed">Coordinated campaigns across email, LinkedIn, and phone. Personalized email sequences, targeted LinkedIn connection requests with custom messages, follow-up message sequencing, and phone scripts tailored to each prospect. Every touchpoint includes a clear connection point that gives the prospect a reason to engage.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">🔍</div>
+        <h3 class="text-lg font-bold mb-2">Lead Generation & Qualification</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Researches new leads from multiple sources, identifying potential customers who are a strong fit for your solution.</p>
       </div>
 
-      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-7 card-hover">
-        <div class="text-3xl mb-4">📱</div>
-        <h3 class="text-xl font-bold mb-3">Contact Discovery</h3>
-        <p class="text-dark-200 text-sm leading-relaxed">Finds hard-to-get contact information including direct phone numbers, mobile numbers, and personal email addresses. Your reps stop guessing and start connecting.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">📅</div>
+        <h3 class="text-lg font-bold mb-2">Sets Meetings</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Books qualified appointments for your senior sales team. Your AEs walk in ready to close.</p>
       </div>
 
-      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-7 card-hover">
-        <div class="text-3xl mb-4">📊</div>
-        <h3 class="text-xl font-bold mb-3">CRM Management</h3>
-        <p class="text-dark-200 text-sm leading-relaxed">Pipeline updates, contact enrichment, deal tracking, activity logging, duplicate cleanup, and data accuracy. Your CRM finally reflects reality — without your reps doing the work.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">📊</div>
+        <h3 class="text-lg font-bold mb-2">CRM Management</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Pipeline updates, contact enrichment, activity logging, and data accuracy. Your CRM finally reflects reality.</p>
       </div>
 
-      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-7 card-hover">
-        <div class="text-3xl mb-4">☀️</div>
-        <h3 class="text-xl font-bold mb-3">Morning Briefing</h3>
-        <p class="text-dark-200 text-sm leading-relaxed">Every rep hits the ground running with today's priorities, accounts that need attention, deals at risk, new intel on their prospects, and follow-ups due. No scrambling, no guessing.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">🧠</div>
+        <h3 class="text-lg font-bold mb-2">Market Intelligence</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Gathers insights on prospect pain points and industry trends to sharpen your sales strategy.</p>
       </div>
 
-      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-7 card-hover">
-        <div class="text-3xl mb-4">📡</div>
-        <h3 class="text-xl font-bold mb-3">Account Monitoring</h3>
-        <p class="text-dark-200 text-sm leading-relaxed">Real-time signals across your target accounts — leadership changes, funding, news, pain indicators. Your BDR catches opportunities your reps would miss.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">🤝</div>
+        <h3 class="text-lg font-bold mb-2">Relationship Building</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Develops initial relationships with prospects and nurtures them until they're ready to buy.</p>
       </div>
 
-      <div class="md:col-span-2 lg:col-span-1 bg-dark-600/50 border border-white/5 rounded-2xl p-7 card-hover">
-        <div class="text-3xl mb-4">🏭</div>
-        <h3 class="text-xl font-bold mb-3">Competitive Intel</h3>
-        <p class="text-dark-200 text-sm leading-relaxed">What your competitors are doing, who they're hiring, what they're announcing — delivered so your reps can position against them in every conversation.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">☀️</div>
+        <h3 class="text-lg font-bold mb-2">Morning Briefing</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Every rep starts the day with today's priorities, accounts needing attention, and deals at risk. No scrambling.</p>
+      </div>
+
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">📡</div>
+        <h3 class="text-lg font-bold mb-2">Account Monitoring</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Real-time signals — leadership changes, funding, news, pain indicators. Never miss an opportunity to engage.</p>
+      </div>
+
+      <div class="bg-dark-600/50 border border-white/5 rounded-2xl p-6 card-hover">
+        <div class="text-3xl mb-3">🏭</div>
+        <h3 class="text-lg font-bold mb-2">Competitive Intel</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">What your competitors are doing, announcing, and hiring — so your reps can position against them in every conversation.</p>
       </div>
 
     </div>
-    <p class="text-dark-300 text-center mt-12 text-sm">Your BDR Agent works 24/7 — no PTO, no ramp time, no quota complaints.</p>
+    <p class="text-dark-300 text-center mt-8 text-sm">Your BDR Agent works 24/7 — no PTO, no ramp time, no quota complaints.</p>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-16 fade-in">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl sm:text-4xl font-black mb-3">How It Works</h2>
+    <p class="text-dark-300 mb-10">Up and running in 24 hours. No IT department required.</p>
+    <div class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-dark-600/40 border border-white/5 rounded-2xl p-6">
+        <div class="w-12 h-12 bg-brand-500/10 border border-brand-500/20 rounded-xl flex items-center justify-center text-brand-400 font-black text-xl mx-auto mb-4">1</div>
+        <h3 class="font-bold text-lg mb-2">Tell Us Your ICP</h3>
+        <p class="text-dark-200 text-sm">Tell us what you sell, who you sell to, and what a great prospect looks like.</p>
+      </div>
+      <div class="bg-dark-600/40 border border-white/5 rounded-2xl p-6">
+        <div class="w-12 h-12 bg-brand-500/10 border border-brand-500/20 rounded-xl flex items-center justify-center text-brand-400 font-black text-xl mx-auto mb-4">2</div>
+        <h3 class="font-bold text-lg mb-2">Connect Your Tools</h3>
+        <p class="text-dark-200 text-sm">Connect your CRM and email. We handle the setup — no technical skills needed.</p>
+      </div>
+      <div class="bg-dark-600/40 border border-white/5 rounded-2xl p-6">
+        <div class="w-12 h-12 bg-brand-500/10 border border-brand-500/20 rounded-xl flex items-center justify-center text-brand-400 font-black text-xl mx-auto mb-4">3</div>
+        <h3 class="font-bold text-lg mb-2">Your BDR Goes Live</h3>
+        <p class="text-dark-200 text-sm">Your BDR Agent starts working the next morning. First briefing. First prospects. Day one.</p>
+      </div>
+    </div>
+    <p class="text-brand-400 font-semibold text-lg">5 minutes to set up. Pipeline starts filling immediately.</p>
   </div>
 </section>
 
 <!-- Sales Manager Layer -->
-<section class="py-24 fade-in" style="background: linear-gradient(180deg, rgba(16,185,129,0.03) 0%, transparent 100%);">
+<section class="py-16 bg-dark-800/50 fade-in">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <span class="inline-block bg-brand-500/10 text-brand-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-brand-500/20">Coming Soon</span>
-    <h2 class="text-3xl sm:text-4xl font-800 mb-10">The Sales Manager Layer</h2>
-    <div class="grid sm:grid-cols-2 gap-4 text-left mb-10">
+    <span class="inline-block bg-brand-500/10 text-brand-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-5 border border-brand-500/20">Coming Soon</span>
+    <h2 class="text-3xl sm:text-4xl font-black mb-4">The Sales Manager Layer</h2>
+    <p class="text-dark-200 mb-8">Visibility across your entire team — not just one rep.</p>
+    <div class="grid sm:grid-cols-2 gap-4 text-left mb-8">
       <div class="bg-dark-600/30 border border-white/5 rounded-xl p-5">
         <p class="text-dark-100">See what your entire team is actually doing — <strong class="text-white">real activity, not self-reported</strong></p>
       </div>
@@ -150,82 +276,58 @@ tailwind.config = {
         <p class="text-dark-100"><strong class="text-white">Pipeline health</strong> across all reps — what's moving, what's stuck, what's at risk</p>
       </div>
       <div class="bg-dark-600/30 border border-white/5 rounded-xl p-5">
-        <p class="text-dark-100"><strong class="text-white">Revenue forecasting</strong> with the WHY behind the numbers</p>
+        <p class="text-dark-100"><strong class="text-white">Revenue forecasting</strong> with the WHY behind the numbers — not just dashboards</p>
       </div>
     </div>
     <p class="text-xl text-brand-400 font-semibold italic">"The visibility you always wanted but never had."</p>
   </div>
 </section>
 
-<!-- How It Works -->
-<section class="py-24 bg-dark-800/50 fade-in">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl sm:text-4xl font-800 mb-16">How It Works</h2>
-    <div class="grid md:grid-cols-3 gap-8 mb-12">
-      <div>
-        <div class="w-14 h-14 bg-brand-500/10 border border-brand-500/20 rounded-2xl flex items-center justify-center text-brand-400 font-bold text-xl mx-auto mb-5">1</div>
-        <h3 class="font-bold text-lg mb-2">Tell Us Your ICP</h3>
-        <p class="text-dark-200 text-sm">Tell us what you sell and who you sell to.</p>
-      </div>
-      <div>
-        <div class="w-14 h-14 bg-brand-500/10 border border-brand-500/20 rounded-2xl flex items-center justify-center text-brand-400 font-bold text-xl mx-auto mb-5">2</div>
-        <h3 class="font-bold text-lg mb-2">Connect Your Tools</h3>
-        <p class="text-dark-200 text-sm">Connect your CRM and email.</p>
-      </div>
-      <div>
-        <div class="w-14 h-14 bg-brand-500/10 border border-brand-500/20 rounded-2xl flex items-center justify-center text-brand-400 font-bold text-xl mx-auto mb-5">3</div>
-        <h3 class="font-bold text-lg mb-2">BDR Goes Live</h3>
-        <p class="text-dark-200 text-sm">Your BDR Agent starts working tomorrow morning.</p>
-      </div>
-    </div>
-    <p class="text-brand-400 font-semibold text-lg">5 minutes to set up. No training. No IT department.</p>
-  </div>
-</section>
-
 <!-- Enterprise Infrastructure -->
-<section class="py-24 fade-in">
+<section class="py-16 fade-in">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl sm:text-4xl font-800 mb-12">Built on Enterprise Infrastructure</h2>
-    <div class="grid sm:grid-cols-3 gap-6 mb-12">
-      <div class="bg-dark-600/50 border border-white/5 rounded-xl p-6">
-        <div class="text-2xl mb-3">⚡</div>
-        <h3 class="font-bold mb-2">OpenClaw + NVIDIA NemoClaw</h3>
-        <p class="text-dark-200 text-sm">Enterprise-grade AI infrastructure powering every action.</p>
+    <h2 class="text-3xl sm:text-4xl font-black mb-3">Built on Enterprise Infrastructure</h2>
+    <p class="text-dark-300 mb-10">Secure, isolated, and enterprise-ready from day one.</p>
+    <div class="grid sm:grid-cols-3 gap-5 mb-10">
+      <div class="bg-dark-600/50 border border-white/5 rounded-xl p-5">
+        <div class="text-2xl mb-2">⚡</div>
+        <h3 class="font-bold mb-1 text-sm">OpenClaw + NVIDIA NemoClaw</h3>
+        <p class="text-dark-200 text-xs">Enterprise-grade AI infrastructure powering every action.</p>
       </div>
-      <div class="bg-dark-600/50 border border-white/5 rounded-xl p-6">
-        <div class="text-2xl mb-3">🔒</div>
-        <h3 class="font-bold mb-2">OpenShell Security</h3>
-        <p class="text-dark-200 text-sm">Your data is sandboxed and isolated. Always.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-xl p-5">
+        <div class="text-2xl mb-2">🔒</div>
+        <h3 class="font-bold mb-1 text-sm">OpenShell Security</h3>
+        <p class="text-dark-200 text-xs">Your data is sandboxed and isolated. Always.</p>
       </div>
-      <div class="bg-dark-600/50 border border-white/5 rounded-xl p-6">
-        <div class="text-2xl mb-3">🛡️</div>
-        <h3 class="font-bold mb-2">Policy-Based Guardrails</h3>
-        <p class="text-dark-200 text-sm">You set the rules for what the agent can access.</p>
+      <div class="bg-dark-600/50 border border-white/5 rounded-xl p-5">
+        <div class="text-2xl mb-2">🛡️</div>
+        <h3 class="font-bold mb-1 text-sm">Policy-Based Guardrails</h3>
+        <p class="text-dark-200 text-xs">You set the rules for what the agent can access and do.</p>
       </div>
     </div>
     <blockquote class="text-xl sm:text-2xl font-semibold text-dark-100 italic max-w-2xl mx-auto">
       "Every company needs an OpenClaw strategy."
     </blockquote>
-    <p class="text-dark-300 mt-3">— Jensen Huang, CEO, NVIDIA</p>
+    <p class="text-dark-300 mt-2 text-sm">— Jensen Huang, CEO, NVIDIA</p>
   </div>
 </section>
 
 <!-- Credibility -->
-<section class="py-24 bg-dark-800/50 fade-in">
+<section class="py-16 bg-dark-800/50 fade-in">
   <div class="max-w-3xl mx-auto px-6 text-center">
     <div class="bg-dark-600/50 border border-brand-500/10 rounded-2xl p-10">
       <p class="text-2xl sm:text-3xl font-bold mb-4 leading-snug">"Built by a 30-year B2B sales veteran who runs his own AI BDR every day."</p>
-      <p class="text-dark-200 text-lg">Not a tech startup guessing at sales — a sales leader who built the tool he needed.</p>
+      <p class="text-dark-200 text-lg">Not a tech startup guessing at sales — a sales leader who built the tool he needed and made it available to everyone.</p>
     </div>
   </div>
 </section>
 
 <!-- Contact Form -->
-<section id="contact" class="py-24 fade-in">
+<section id="contact" class="py-16 fade-in">
   <div class="max-w-2xl mx-auto px-6">
-    <h2 class="text-3xl sm:text-4xl font-800 mb-4 text-center">Book a Discovery Call</h2>
-    <p class="text-dark-300 text-center mb-12">See how ClawBDR can transform your sales team's pipeline.</p>
-    <form id="contactForm" action="https://formspree.io/f/meerdbew" method="POST" class="space-y-5">
+    <h2 class="text-3xl sm:text-4xl font-black mb-3 text-center">Book a Discovery Call</h2>
+    <p class="text-dark-300 text-center mb-10">See how ClawBDR can transform your sales team's pipeline.</p>
+    <form id="contactForm" action="https://formspree.io/f/meerdbew" method="POST" class="space-y-4">
       <input type="hidden" name="_source" value="clawbdr.ai">
       <div>
         <label class="block text-sm font-medium text-dark-200 mb-1.5">Name *</label>
@@ -266,34 +368,31 @@ tailwind.config = {
 </section>
 
 <!-- Footer -->
-<footer class="border-t border-white/5 py-12">
+<footer class="border-t border-white/5 py-10">
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <div class="text-xl font-bold mb-3">Claw<span class="gradient-text">BDR</span>.ai</div>
-    <p class="text-dark-300 text-sm mb-4">Built on OpenClaw + NVIDIA NemoClaw</p>
-    <div class="flex justify-center gap-6 text-sm text-dark-300 mb-4">
+    <div class="text-xl font-bold mb-2">Claw<span class="gradient-text">BDR</span>.ai</div>
+    <p class="text-dark-300 text-sm mb-3">Built on OpenClaw + NVIDIA NemoClaw</p>
+    <div class="flex justify-center gap-6 text-sm text-dark-300 mb-3">
       <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
       <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
       <a href="mailto:support@clawbdr.ai" class="hover:text-white transition-colors">support@clawbdr.ai</a>
     </div>
-    <p class="text-dark-400 text-xs">© 2026 ClawBDR. All rights reserved.</p>
+    <p class="text-dark-400 text-xs">© 2026 ClawBDR, LLC. All rights reserved.</p>
   </div>
 </footer>
 
 <script>
-// Scroll fade-in
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Form handler — submits via Formspree with AJAX fallback
 document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
   const form = this;
-  const data = new FormData(form);
   fetch(form.action, {
     method: 'POST',
-    body: data,
+    body: new FormData(form),
     headers: { 'Accept': 'application/json' }
   }).then(response => {
     if (response.ok) {
