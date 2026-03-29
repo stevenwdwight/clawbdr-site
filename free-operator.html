@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free: B2B Sales Daily Operator — ClawBDR.ai</title>
+<meta name="description" content="Get the free AI skill that gives B2B sales reps in transportation and logistics a daily edge. Research, outreach, and pipeline — on autopilot.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      colors: {
+        brand: { 50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',500:'#10b981',600:'#059669',700:'#047857',800:'#065f46',900:'#064e3b' },
+        dark: { 50:'#f8fafc',100:'#e2e8f0',200:'#94a3b8',300:'#64748b',400:'#475569',500:'#1e293b',600:'#0f172a',700:'#0c1220',800:'#080e1a',900:'#050a12' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; background: #050a12; color: #e2e8f0; }
+  .gradient-text { background: linear-gradient(135deg, #34d399, #10b981, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero-gradient { background: radial-gradient(ellipse at 50% 0%, rgba(16,185,129,0.1) 0%, transparent 65%); }
+  .glow-card { box-shadow: 0 0 60px rgba(16, 185, 129, 0.12); }
+  input:focus, textarea:focus { outline: none; }
+  .check-item::before { content: '✓'; color: #10b981; font-weight: 700; margin-right: 10px; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-xl border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold">Claw<span class="gradient-text">BDR</span>.ai</a>
+    <a href="index.html#contact" class="hidden sm:inline-block bg-brand-500 hover:bg-brand-400 text-dark-900 font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm">Book a Demo</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-gradient min-h-screen flex items-center pt-20">
+  <div class="max-w-5xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: Copy -->
+      <div>
+        <div class="inline-block bg-brand-500/10 text-brand-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-brand-500/20">
+          Free Download — No Credit Card
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-tight mb-6">
+          Your AI Sales Assistant.<br><span class="gradient-text">Free. Ready in Minutes.</span>
+        </h1>
+        <p class="text-lg text-dark-200 mb-8 leading-relaxed">
+          Built for B2B sales reps selling technology into transportation and logistics companies. Every morning, your AI gives you a briefing, surfaces new leads, drafts outreach, and flags opportunities — before you finish your first cup of coffee.
+        </p>
+
+        <!-- What you get -->
+        <div class="space-y-3 mb-8">
+          <p class="text-sm font-semibold text-dark-300 uppercase tracking-widest mb-4">What's included</p>
+          <div class="flex items-start gap-3">
+            <span class="text-brand-400 font-bold mt-0.5">✓</span>
+            <span class="text-dark-100">Daily morning briefing — leads, competitor news, account updates</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-brand-400 font-bold mt-0.5">✓</span>
+            <span class="text-dark-100">Account research on any company in minutes</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-brand-400 font-bold mt-0.5">✓</span>
+            <span class="text-dark-100">Outreach drafts written in your voice, not a robot's</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-brand-400 font-bold mt-0.5">✓</span>
+            <span class="text-dark-100">Pipeline tracking and follow-up reminders</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-brand-400 font-bold mt-0.5">✓</span>
+            <span class="text-dark-100">Tuned for transportation and logistics — speaks the language</span>
+          </div>
+        </div>
+
+        <!-- Social proof -->
+        <div class="border border-brand-500/20 bg-brand-500/5 rounded-xl p-5">
+          <p class="text-dark-100 text-sm leading-relaxed italic">
+            "Built by a 30-year B2B sales veteran who runs his own AI BDR every day. I sold technology at Qualcomm and Platform Science before building this for myself."
+          </p>
+          <p class="text-brand-400 text-sm font-semibold mt-3">— Steven Dwight, VP of Sales, Air-Weigh</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div>
+        <div class="bg-dark-800/60 border border-white/10 rounded-2xl p-8 glow-card">
+          <h2 class="text-2xl font-bold mb-2">Get the Free Skill</h2>
+          <p class="text-dark-200 text-sm mb-6">Enter your info below. You'll get the download link and a quick-start guide by email.</p>
+
+          <form id="lead-form" action="https://formspree.io/f/meerdbew" method="POST">
+            <!-- Hidden fields -->
+            <input type="hidden" name="_subject" value="New Free Skill Download — B2B Sales Daily Operator">
+            <input type="hidden" name="source" value="free-operator-landing-page">
+            <input type="hidden" name="_next" value="https://clawbdr.ai/thank-you.html">
+
+            <div class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-dark-200 mb-1.5">First Name</label>
+                <input type="text" name="first_name" required placeholder="John"
+                  class="w-full bg-dark-700/60 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-dark-300 focus:border-brand-500 transition-colors text-sm">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-dark-200 mb-1.5">Work Email</label>
+                <input type="email" name="email" required placeholder="you@company.com"
+                  class="w-full bg-dark-700/60 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-dark-300 focus:border-brand-500 transition-colors text-sm">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-dark-200 mb-1.5">Company</label>
+                <input type="text" name="company" placeholder="Acme Telematics"
+                  class="w-full bg-dark-700/60 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-dark-300 focus:border-brand-500 transition-colors text-sm">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-dark-200 mb-1.5">What do you sell?</label>
+                <select name="product_type"
+                  class="w-full bg-dark-700/60 border border-white/10 rounded-lg px-4 py-3 text-white focus:border-brand-500 transition-colors text-sm">
+                  <option value="" disabled selected>Select one...</option>
+                  <option value="Telematics / GPS">Telematics / GPS</option>
+                  <option value="Cameras / Dash Cams">Cameras / Dash Cams</option>
+                  <option value="ELD / Compliance">ELD / Compliance Software</option>
+                  <option value="Fleet Software / TMS">Fleet Software / TMS</option>
+                  <option value="Onboard Equipment / Hardware">Onboard Equipment / Hardware</option>
+                  <option value="Safety Technology">Safety Technology</option>
+                  <option value="Other Transportation Tech">Other Transportation Tech</option>
+                </select>
+              </div>
+
+              <button type="submit"
+                class="w-full bg-brand-500 hover:bg-brand-400 text-dark-900 font-bold py-3.5 rounded-lg transition-colors text-sm mt-2">
+                Send Me the Free Skill →
+              </button>
+            </div>
+          </form>
+
+          <p class="text-dark-300 text-xs mt-4 text-center">No spam. No pitch. Just the download link and how to get started.</p>
+        </div>
+
+        <!-- Requires note -->
+        <div class="mt-4 text-center">
+          <p class="text-dark-300 text-xs">Requires <a href="https://openclaw.ai" target="_blank" class="text-brand-400 hover:underline">OpenClaw</a> to be installed on your Mac. Free to install.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-20 border-t border-white/5">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-black mb-4">How It Works</h2>
+    <p class="text-dark-200 mb-14">Three steps from zero to your first AI-powered sales morning.</p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-dark-800/40 border border-white/8 rounded-xl p-7 text-left">
+        <div class="text-3xl font-black text-brand-500 mb-4">01</div>
+        <h3 class="font-bold text-lg mb-2">Install OpenClaw</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Free Mac app. Takes 5 minutes. This is the platform the skill runs on.</p>
+      </div>
+      <div class="bg-dark-800/40 border border-white/8 rounded-xl p-7 text-left">
+        <div class="text-3xl font-black text-brand-500 mb-4">02</div>
+        <h3 class="font-bold text-lg mb-2">Install the Skill</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Drop the SKILL.md file into your OpenClaw workspace. One file, fully configured.</p>
+      </div>
+      <div class="bg-dark-800/40 border border-white/8 rounded-xl p-7 text-left">
+        <div class="text-3xl font-black text-brand-500 mb-4">03</div>
+        <h3 class="font-bold text-lg mb-2">Start Your Morning</h3>
+        <p class="text-dark-200 text-sm leading-relaxed">Ask your AI for a briefing. Get leads, news, and outreach drafts before 8 AM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-white/5 py-10">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <p class="text-dark-300 text-sm">© 2026 ClawBDR, LLC. All rights reserved.</p>
+    <div class="flex gap-6 text-sm text-dark-300">
+      <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
+      <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
+      <a href="index.html" class="hover:text-white transition-colors">Home</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're In — ClawBDR.ai</title>
+<meta name="robots" content="noindex">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      colors: {
+        brand: { 400:'#34d399', 500:'#10b981' },
+        dark: { 200:'#94a3b8', 300:'#64748b', 700:'#0c1220', 800:'#080e1a', 900:'#050a12' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; background: #050a12; color: #e2e8f0; }
+  .gradient-text { background: linear-gradient(135deg, #34d399, #10b981, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+</style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 bg-dark-900/80 backdrop-blur-xl border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold">Claw<span class="gradient-text">BDR</span>.ai</a>
+  </div>
+</nav>
+
+<!-- Main -->
+<main class="flex-1 flex items-center justify-center px-6 pt-20">
+  <div class="max-w-lg text-center py-20">
+    <!-- Icon -->
+    <div class="w-20 h-20 bg-brand-500/10 border border-brand-500/30 rounded-full flex items-center justify-center mx-auto mb-8">
+      <svg class="w-10 h-10 text-brand-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+      </svg>
+    </div>
+
+    <h1 class="text-4xl font-black mb-4">You're in. Check your inbox.</h1>
+    <p class="text-dark-200 text-lg leading-relaxed mb-8">
+      The download link and quick-start guide are on their way. Usually arrives within a few minutes — check your spam folder if you don't see it.
+    </p>
+
+    <!-- What's next -->
+    <div class="bg-dark-800/60 border border-white/10 rounded-xl p-6 text-left mb-8">
+      <p class="text-sm font-semibold text-dark-300 uppercase tracking-widest mb-4">While you wait</p>
+      <div class="space-y-3 text-sm text-dark-200">
+        <div class="flex items-start gap-3">
+          <span class="text-brand-400 font-bold">1.</span>
+          <span>Download and install <a href="https://openclaw.ai" target="_blank" class="text-brand-400 hover:underline">OpenClaw</a> on your Mac — it's free and takes about 5 minutes.</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-brand-400 font-bold">2.</span>
+          <span>Check your email for the skill file and setup instructions.</span>
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-brand-400 font-bold">3.</span>
+          <span>Drop the SKILL.md file into your OpenClaw workspace and you're live.</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.html" class="text-brand-400 hover:text-brand-300 text-sm font-medium transition-colors">← Back to ClawBDR.ai</a>
+  </div>
+</main>
+
+<footer class="border-t border-white/5 py-8">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-dark-300 text-sm">© 2026 ClawBDR, LLC</p>
+  </div>
+</footer>
+
+</body>
+</html>
